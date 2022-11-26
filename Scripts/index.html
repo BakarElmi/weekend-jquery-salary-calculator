@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Change the <title> from "Page Title" to "Hello World" -->
+    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script src="scripts.js"></script>
+</head>
+    <body>
+        <h1>Salary Calculator</h1>
+
+        <form id="employee-form">
+            <label for="firstName">First Name: </label>
+            <input class="employee-input" id="firstName" type="text">
+
+            <label for="lastName">Last Name: </label>
+            <input class="employee-input" id="lastName" type="text">
+
+            <label for="ID">ID Number: </label>
+            <input class="employee-input" id="ID" type="text">
+
+            <label for="jobTitle">Job Tittle: </label>
+            <input class="employee-input" id="jobTitle" type="text">
+            
+            <label for="salary">Salary: </label>
+            <input class="employee-input" id="salary" type="text">
+
+            <input id="submit" type="submit"/>
+        </form>
+
+        <table id="employee-table">
+            <tr id="employee-header">
+                <th class="employeeInfo" id="emp-firstName">First Name</th>
+                <th class="employeeInfo" id="emp-lastName">Last Name</th>
+                <th class="employeeInfo" id="emp-ID">ID Number</th>
+                <th class="employeeInfo" id="emp-JobTitle">Job Title</th>
+                <th class="employeeInfo" id="emp-salary">Salary</th>
+        </tr>
+
+        </table>
+
+
+    </body>
+</html>
