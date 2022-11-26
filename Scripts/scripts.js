@@ -31,7 +31,8 @@ function getInput(){
     if(firstName.length == 0 ||lastName.length == 0 || ID.length == 0 || jobTitle.length == 0 || salary.length == 0){
         console.log("Please make sure to fill out the form")
     }else {
-        render(input);    
+        render(input);
+        monthlyCal(employeeData);    
     }
 
 }
@@ -47,4 +48,14 @@ function render(input){
             <td class="employeeInfo" id="emp-salary">${input.salary}</td>   
         </tr> 
     `).appendTo($('#employee-table'))
+}
+
+function monthlyCal(array){
+    let total = 0;
+    for(let i=0; i<array.length; i++){
+        total += parseFloat(array[i].salary/12);
+    }
+
+    $('#monthlyTotal').text(`Monthly Total: ${total}`);
+    console.log(total);
 }
